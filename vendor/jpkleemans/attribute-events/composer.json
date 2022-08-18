@@ -1,0 +1,44 @@
+{
+  "name": "jpkleemans/attribute-events",
+  "description": "🔥 Fire events on attribute changes of your Eloquent model",
+  "homepage": "https://attribute.events/",
+  "keywords": [
+    "laravel",
+    "eloquent",
+    "events",
+    "attributes",
+    "domain events",
+    "model events",
+    "ddd"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jan-Paul Kleemans",
+      "email": "jpkleemans@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Kleemans\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Kleemans\\Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "php": "^7.3|^8.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5",
+    "illuminate/events": "^9.1",
+    "illuminate/database": "^9.1",
+    "friendsofphp/php-cs-fixer": "^3.6"
+  },
+  "scripts": {
+    "tests": "phpunit ./tests",
+    "lint": "php-cs-fixer fix"
+  }
+}

@@ -1,0 +1,36 @@
+{
+    "name": "nabeel/vacentral",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">= 7.3",
+        "ext-json": "*",
+        "guzzlehttp/guzzle": ">= 6.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": ">= 9.0"
+    },
+    "archive": {
+        "exclude": [
+            ".idea",
+            "tests",
+            ".travis.yml",
+            "Makefile"
+        ]
+    },
+    "autoload": {
+        "psr-4": {
+            "VaCentral\\": "src/"
+        },
+        "exclude-from-classmap": [
+            "/tests/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
